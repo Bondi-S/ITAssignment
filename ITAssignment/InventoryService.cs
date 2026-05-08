@@ -25,20 +25,20 @@ namespace ITAssignment
                         string brand = parts[2];
                         decimal price = decimal.Parse(parts[3]);
                         int quantity = 0;
-                        products.Add(new Product(id, name, brand)
+                        products.Add(new Product(id, name, brand, price, quantity));
                     }
                     catch
                     {
 
                     }
-                }
-                return products;
+                } 
             }
+            return products;
 
         }
         public static void SaveToCSV(string filePath, List<Product> products)
         {
-            using (SteamWriter writer = new StreamWriter(filePath))
+            using (StreamWriter writer = new StreamWriter(filePath))
             {
                 writer.WriteLine("ProductIDProductName,ProductBrand,Price,Quantity");
                 foreach (var p in products)
