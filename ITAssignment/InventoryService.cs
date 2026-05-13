@@ -13,7 +13,7 @@ namespace ITAssignment
         {
             List<Product> products = new List<Product>();
             if (!File.Exists(filePath)) return products;
-            var lines = File.ReadAllLines(filePath).skip(1);
+            var lines = File.ReadAllLines(filePath).Skip(1);
             foreach (string line in lines)
             {
                 string[] parts = line.Split(',');
@@ -32,7 +32,7 @@ namespace ITAssignment
                     {
 
                     }
-                } 
+                }
             }
             return products;
 
@@ -44,8 +44,9 @@ namespace ITAssignment
                 writer.WriteLine("ProductIDProductName,ProductBrand,Price,Quantity");
                 foreach (var p in products)
                 {
-                    string line = $"{p.ProductID},{p.ProductName},{p.ProductBrand}
-
+                    string line = $"{p.ProductID},{p.ProductName},{p.ProductBrand},{p.ProductPrice * 100},{p.ProductQuantity}";
+                    writer.WriteLine(line);
+                }
             }
         }
     }

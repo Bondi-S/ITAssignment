@@ -22,7 +22,7 @@ namespace ITAssignment
 
         private void UC_Inventory_Load(object sender, EventArgs e)
         {
-            var tempData = InventoryService.LoadFromCSV(filePath);
+            var tempData = InventoryService.LoadFromCSV(filepath);
             _inventoryList.Clear();
 
             foreach (var item in tempData)
