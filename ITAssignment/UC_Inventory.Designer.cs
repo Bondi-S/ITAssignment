@@ -2,12 +2,30 @@
 {
     partial class UC_Inventory
     {
-
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
         #region Component Designer generated code
 
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             this.dgvInventory = new System.Windows.Forms.DataGridView();
@@ -50,7 +68,7 @@
             this.Price,
             this.Quantity});
             this.dgvInventory.Location = new System.Drawing.Point(387, 44);
-            this.dgvInventory.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvInventory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersWidth = 51;
@@ -111,9 +129,9 @@
             this.gbProductDetails.Controls.Add(this.txtID);
             this.gbProductDetails.Controls.Add(this.lblID);
             this.gbProductDetails.Location = new System.Drawing.Point(55, 44);
-            this.gbProductDetails.Margin = new System.Windows.Forms.Padding(4);
+            this.gbProductDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbProductDetails.Name = "gbProductDetails";
-            this.gbProductDetails.Padding = new System.Windows.Forms.Padding(4);
+            this.gbProductDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbProductDetails.Size = new System.Drawing.Size(245, 219);
             this.gbProductDetails.TabIndex = 1;
             this.gbProductDetails.TabStop = false;
@@ -122,9 +140,9 @@
             // txtBrand
             // 
             this.txtBrand.Location = new System.Drawing.Point(93, 119);
-            this.txtBrand.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(132, 20);
+            this.txtBrand.Size = new System.Drawing.Size(132, 22);
             this.txtBrand.TabIndex = 9;
             // 
             // lblBrand
@@ -133,14 +151,14 @@
             this.lblBrand.Location = new System.Drawing.Point(8, 123);
             this.lblBrand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(35, 13);
+            this.lblBrand.Size = new System.Drawing.Size(43, 16);
             this.lblBrand.TabIndex = 8;
             this.lblBrand.Text = "Brand";
             // 
             // btnClearProduct
             // 
             this.btnClearProduct.Location = new System.Drawing.Point(8, 183);
-            this.btnClearProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClearProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClearProduct.Name = "btnClearProduct";
             this.btnClearProduct.Size = new System.Drawing.Size(215, 28);
             this.btnClearProduct.TabIndex = 5;
@@ -150,9 +168,9 @@
             // txtQuantity
             // 
             this.txtQuantity.Location = new System.Drawing.Point(93, 151);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(132, 20);
+            this.txtQuantity.Size = new System.Drawing.Size(132, 22);
             this.txtQuantity.TabIndex = 7;
             // 
             // lblQuantity
@@ -161,16 +179,16 @@
             this.lblQuantity.Location = new System.Drawing.Point(8, 155);
             this.lblQuantity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
+            this.lblQuantity.Size = new System.Drawing.Size(55, 16);
             this.lblQuantity.TabIndex = 6;
             this.lblQuantity.Text = "Quantity";
             // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(93, 87);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(132, 20);
+            this.txtPrice.Size = new System.Drawing.Size(132, 22);
             this.txtPrice.TabIndex = 5;
             // 
             // lblPrice
@@ -179,16 +197,16 @@
             this.lblPrice.Location = new System.Drawing.Point(8, 91);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(31, 13);
+            this.lblPrice.Size = new System.Drawing.Size(38, 16);
             this.lblPrice.TabIndex = 4;
             this.lblPrice.Text = "Price";
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(93, 55);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(132, 20);
+            this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 3;
             // 
             // lblName
@@ -197,16 +215,16 @@
             this.lblName.Location = new System.Drawing.Point(8, 59);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.Size = new System.Drawing.Size(44, 16);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Name";
             // 
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(93, 23);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(132, 20);
+            this.txtID.Size = new System.Drawing.Size(132, 22);
             this.txtID.TabIndex = 1;
             // 
             // lblID
@@ -215,48 +233,51 @@
             this.lblID.Location = new System.Drawing.Point(8, 27);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(18, 13);
+            this.lblID.Size = new System.Drawing.Size(20, 16);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID";
             // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(55, 271);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 28);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+
             // 
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(196, 271);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 28);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+
             // 
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(0, 23);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+
             // 
             // gbDelete
             // 
             this.gbDelete.Controls.Add(this.txtDelete);
             this.gbDelete.Controls.Add(this.btnDelete);
             this.gbDelete.Location = new System.Drawing.Point(55, 318);
-            this.gbDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.gbDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbDelete.Name = "gbDelete";
-            this.gbDelete.Padding = new System.Windows.Forms.Padding(4);
+            this.gbDelete.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbDelete.Size = new System.Drawing.Size(267, 65);
             this.gbDelete.TabIndex = 5;
             this.gbDelete.TabStop = false;
@@ -265,25 +286,36 @@
             // txtDelete
             // 
             this.txtDelete.Location = new System.Drawing.Point(108, 27);
-            this.txtDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDelete.Name = "txtDelete";
-            this.txtDelete.Size = new System.Drawing.Size(132, 20);
+            this.txtDelete.Size = new System.Drawing.Size(132, 22);
             this.txtDelete.TabIndex = 5;
             // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(55, 510);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(159, 28);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save Changes";
             this.btnSave.UseVisualStyleBackColor = true;
+
             // 
             // UC_Inventory
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.gbDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.gbProductDetails);
+            this.Controls.Add(this.dgvInventory);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_Inventory";
-            this.Load += new System.EventHandler(this.UC_Inventory_Load_1);
+            this.Size = new System.Drawing.Size(972, 608);
+            this.Load += new System.EventHandler(this.UC_Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             this.gbProductDetails.ResumeLayout(false);
             this.gbProductDetails.PerformLayout();
