@@ -22,6 +22,8 @@ namespace ITAssignment
 
         private void UC_Inventory_Load(object sender, EventArgs e)
         {
+            string path = filepath;
+
             var tempData = InventoryService.LoadFromCSV(filepath);
             _inventoryList.Clear();
 
@@ -38,6 +40,16 @@ namespace ITAssignment
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbProductDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
